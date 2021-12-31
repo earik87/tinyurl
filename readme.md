@@ -33,6 +33,7 @@ Output;
 ```
 
 - To get the URL from a shortcode, use the following GET command. 
+
 `curl -i http://localhost:5000/abc123`
 
 Output; 
