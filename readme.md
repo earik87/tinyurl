@@ -21,8 +21,7 @@ flask run
 ## Usage.
 Note; Commands are used and tested in Windows. They might differ in MacOS and Linux.
 
-- To shorten the URL, post request can be used as following from the shell. 
-
+- To shorten the URL, post request can be used as following from the shell.  
 `curl --header "Content-Type: application/json" --request POST --data '{ \"url\":\"www.facebook.com\",\"shortcode\":\"abc123\"}' http://localhost:5000/shorten`
 
 Output;
@@ -32,8 +31,7 @@ Output;
 }
 ```
 
-- To get the URL from a shortcode, use the following GET command. 
-
+- To get the URL from a shortcode, use the following GET command.  
 `curl -i http://localhost:5000/abc123`
 
 Output; 
@@ -43,7 +41,7 @@ Output;
 }
 ```
 
-- To get the statistics from the shortcode, use the following GET command.
+- To get the statistics from the shortcode, use the following GET command.  
 `curl -i http://localhost:5000/abc123/stats`
 
 Output;
