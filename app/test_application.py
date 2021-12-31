@@ -62,15 +62,3 @@ class TestClass:
         
         assert response.status_code == 412
         assert data == "The provided shortcode must be made of six alphanumeric characters"
-
-    def testShortenInvalidUrl(self):
-        response = app.test_client().post(
-            '/shorten',
-            data=json.dumps({'url': "www.apple.com",
-                             'shortcode': "abc1234"}),
-            content_type='application/json')
-
-        data = response.get_data(as_text=True)
-        
-        assert response.status_code == 412
-        assert data == "The provided shortcode must be made of six alphanumeric characters"
