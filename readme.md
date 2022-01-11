@@ -56,3 +56,6 @@ Output;
 ## Testing.
 Run `pytest` command to execute tests in `test_application.py` file.  
 
+## Possible Improvements. 
+- Implement a database instead of an array. This will make project scalable. SQLite or PostgreSQL can be used.
+
