@@ -58,4 +58,5 @@ Run `pytest` command to execute tests in `test_application.py` file.
 
 ## Possible Improvements. 
 - Implement a database instead of an array. This will make project scalable. SQLite or PostgreSQL can be used.
+- Use Base62 conversion to create a unique shortcode to avoid database queries on shortcodes. 
 
